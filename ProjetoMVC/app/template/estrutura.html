@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/0e0dedf925.js" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<style type="text/css">
+		*{margin: 0; padding: 0;}
+		body{background-color: #FFADCD;}
+			#corpo{width: 1000px; background-color: #FFF; margin: 0 auto; border-left: 2px solid #CCC; border-right: 2px solid #CCC;}
+			#topo {padding: 20px 25px; border-bottom: 2px solid #CCC;}
+			#topo a{ color: #333; text-decoration: none; font: 25px Courier  ; }
+			#topo a:hover{color :#FFADCD;}
+
+			#conteudo a{ color: #333; text-decoration: none; font: 20px Courier  ; }
+			#conteudo a:hover{color :#FFADCD;}
+			#conteudo{padding: 20px 25px;}
+			#conteudo{ background-image: url("img/kaguya3.jpg"); }
+			#conteudo h1{font: 24px Courier; margin-bottom: 20px; color :#FFADCD; }
+			#conteudo h2{font: 22px Courier; margin-bottom: 7px;} 
+			#conteudo h3{font: 18px Courier; margin-bottom: 7px; color: #FFADCD;} 
+			#conteudo article a{ text-decoration: none;  }
+			#conteudo article a:hover{color: #FFADCD;}
+			#conteudo article{margin-bottom: 20px;}
+			#conteudo article p{font: 16px Courier; color: #4a4a4a; padding-left: 2px;}
+			#conteudo p{font: 16px Courier; color: #4a4a4a; padding-left: 2px; padding-bottom: 20px;}
+
+			.coment{font: 22px Courier; margin-bottom: 20px; color :#FFADCD;}
+			.span{font: 16px Courier;}
+			#artigos{background-color: #FFF; padding: 20px 25px;}
+			.flutuacao-dir{float: right;}
+
+	</style>
+	<div id="corpo">
+		<div id="topo">
+			<header>
+			<nav>
+				
+				<a href="/ProjetoMVC/">Home</a> | 
+				<a href="/ProjetoMVC/?pagina=sobre"> Sobre</a>
+				<a href="/ProjetoMVC/?pagina=admin&metodo=index" class="flutuacao-dir">Admin</a>
+			</nav>
+			</header>
+		</div>
+		<div id="conteudo">
+			<section>
+				<div id="artigos">
+				{{area_dinamica}} </div>
+			</section>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

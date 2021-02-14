@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+				<article>
+					<header>
+						<h2>{{titulo}}</h2>
+					</header>
+					<p>{{conteudo}}</p>
+					
+					<br>
+					<hr>
+					<br>
+					{% if comentario == false %}
+						<p>Nenhum comentario foi encontrado para esse post!</p>
+						{% else %}
+							{% for coment in comentario %}
+							<h3>{{coment.nome}}</h3>
+							<p>{{coment.comentario}}</p>
+							<br>
+							{% endfor %}
+					{% endif %}
+				</article>
+			
+					<hr>
+				<h2 class="coment">Comentar</h2><br>
+					<form method="post" action="?pagina=post&metodo=addComent">
+						<span class="span">Nome:</span><br>
+						<input type="text" name="nome"><p></p>
+						<span class="span">Comentário:</span><br>
+						<textarea cols="90" rows="2" name="comentario"></textarea><p></p>
+						<input type="hidden" name="id" value="{{id}}"><br>
+						<button type="submit" class="btn btn-dark">Comentar</button>
+
+
+					</form>
+</body>
+</html>
