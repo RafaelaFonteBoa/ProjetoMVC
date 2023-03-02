@@ -3,7 +3,7 @@
 
 	require_once"app/lib/Database/conecta.php";
 
-	require_once"app/controller/homeController.php";
+	require_once"app/controller/HomeController.php";
 	require_once"app/controller/ErroController.php";
 	require_once"app/controller/PostController.php";
 	require_once"app/controller/SobreController.php";
