@@ -1,24 +1,39 @@
-
-		<h1>Gerenciador de Conteúdo</h1>
-<p><a href="/ProjetoMVC/?pagina=admin&metodo=create"><i class="fas fa-plus"></i> Criar Publicação </a></p>
+<h1>Gerenciador de Conteúdo</h1>
+<p>
+  <a href="/ProjetoMVC/?pagina=admin&metodo=create"
+    ><i class="fas fa-plus"></i> Criar Publicação
+  </a>
+</p>
 
 <table class="table table-bordered table-hover">
-	<thead>
-	<tr>
-		<th scope="col"><center>ID</center></th>
-		<th scope="col"><center>Título</center></th>
-		<th scope="col"><center>Update</center></th>
-		<th scope="col"><center>Delete</center></th>
-		<th scope="col"><center> Conteudo </center></th>
-	</tr>
-	</thead>
-	 {% for postagem in postagens %}
-	<tr>
-		<th scope="row">{{postagem.id}}</th>
-		<td>{{postagem.titulo}}</td>
-		<td><a href="/ProjetoMVC/?pagina=admin&metodo=change&id={{postagem.id}}"><center><i class="fas fa-pen-square"></i></center></a></td>
-		<td><a href="/ProjetoMVC/?pagina=admin&metodo=delete&id={{postagem.id}}"><center><i class="fas fa-backspace"></i></center></a></td>
-		<td><a href="/ProjetoMVC/?pagina=post&id={{postagem.id}}"><center><i class="fas fa-book"></i></center></a></td>
-	</tr>
-	{% endfor %}
+  <thead>
+    <tr>
+      <th scope="col"><center>ID</center></th>
+      <th scope="col"><center>Título</center></th>
+      <th scope="col"><center>Update</center></th>
+      <th scope="col"><center>Delete</center></th>
+      <th scope="col"><center>Conteudo</center></th>
+    </tr>
+  </thead>
+  {% for postagem in postagens %}
+  <tr>
+    <th scope="row">{{postagem.id}}</th>
+    <td>{{postagem.titulo}}</td>
+    <td>
+      <a href="/ProjetoMVC/?pagina=admin&metodo=change&id={{postagem.id}}"
+        ><center><i class="fas fa-pen-square"></i></center
+      ></a>
+    </td>
+    <td>
+      <a href="/ProjetoMVC/?pagina=admin&metodo=delete&id={{postagem.id}}"
+        ><center><i class="fas fa-backspace"></i></center
+      ></a>
+    </td>
+    <td>
+      <a href="/ProjetoMVC/?pagina=post&id={{postagem.id}}"
+        ><center><i class="fas fa-book"></i></center
+      ></a>
+    </td>
+  </tr>
+  {% endfor %}
 </table>
